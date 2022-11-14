@@ -1,3 +1,93 @@
-h1 {
-color: red;
+body {
+    background-color: rgb(33, 33, 33);
+    background-image: url(./Hollywood.jpg);
+    background-size: 100%;
+    background-position-y: 6%;
+    display: table-cell;
+    overflow: hidden;
+}
+
+#title_box {
+    background-color: rgba(33, 33, 33, 0.44);
+    text-align: center;
+    width: 100vw;
+}
+
+#title_text {
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 6vw;
+}
+
+#item_bar {
+    overflow-y: auto;
+    display: flex;
+    align-items: stretch;
+}
+
+.item_box {
+    text-align: center;
+    border: 0.5vw dashed white;
+    border-radius: 1vw;
+    background-color: rgba(33, 33, 33, 0.44);
+    margin: 0 auto;
+    width: 20vw;
+}
+
+.item_text {
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2vw;
+}
+
+#copyright {
+    color: white;
+    font-size: 2vw;
+    position: absolute;
+    bottom: 1vh;
+    right: 1vw;
+}
+
+
+@media (max-width: 800px) {
+    body {
+        background-position-x: -90vw;
+        background-position-y: 0vh;
+        background-size: 350%;
+        overflow: hidden;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #title_text {
+        font-size: 16vw;
+    }
+
+    #item_bar {
+        overflow-y: auto;
+        flex-direction: column;
+        row-gap: 4vw;
+        height: 70vh;
+        width: 100vw;
+    }
+
+    .item_box {
+        border-radius: 5vw;
+        margin: 2 auto;
+        width: 70vw;
+        height: 20vh;
+    }
+
+    .item_text {
+        font-size: 8vw;
+    }
+
+    #copyright {
+        overflow: hidden;
+        font-size: 5vw;
+        width: 100vw;
+        text-align: center;
+        bottom: 2vh;
+    }
 }
